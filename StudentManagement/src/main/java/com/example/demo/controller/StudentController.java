@@ -17,7 +17,7 @@ public class StudentController {
 @Autowired
 StudentService ss;
 
-@PostMapping("addStudents")
+@PostMapping("addS")
 ResponseEntity addStudent(@RequestBody StudentDto sd) {
 	
 	ss.saveStudent(sd);
